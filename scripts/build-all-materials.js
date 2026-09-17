@@ -1,6 +1,6 @@
 // scripts/build-all-materials.js
 // Compilador oficial de materiales didácticos complementarios para AI Business System
-// Genera los 21 PDFs oficiales con un mínimo estricto de 15 páginas cada uno (>= 315 páginas en total)
+// Genera los 24 PDFs oficiales con un mínimo estricto de 15 páginas cada uno (>= 360 páginas en total)
 
 const fs = require('fs');
 const path = require('path');
@@ -22,6 +22,9 @@ const { m5_c3 } = require('./content-m5-c3');
 const { m6_c1 } = require('./content-m6-c1');
 const { m6_c2 } = require('./content-m6-c2');
 const { m6_c3 } = require('./content-m6-c3');
+const { m7_c1 } = require('./content-m7-c1');
+const { m7_c2 } = require('./content-m7-c2');
+const { m7_c3 } = require('./content-m7-c3');
 const { bonus_c1, bonus_c2 } = require('./content-bonus');
 const { bonus_c3 } = require('./content-bonus-c3');
 
@@ -119,6 +122,21 @@ const materialsManifest = [
     lessonId: "m6-c3",
     config: m6_c3,
     outPath: path.join(ROOT_DIR, 'public', 'materiales', 'modulo-6', 'clase-03.pdf')
+  },
+  {
+    lessonId: "m7-c1",
+    config: m7_c1,
+    outPath: path.join(ROOT_DIR, 'public', 'materiales', 'modulo-7', 'clase-01.pdf')
+  },
+  {
+    lessonId: "m7-c2",
+    config: m7_c2,
+    outPath: path.join(ROOT_DIR, 'public', 'materiales', 'modulo-7', 'clase-02.pdf')
+  },
+  {
+    lessonId: "m7-c3",
+    config: m7_c3,
+    outPath: path.join(ROOT_DIR, 'public', 'materiales', 'modulo-7', 'clase-03.pdf')
   },
   {
     lessonId: "bonus-c1",

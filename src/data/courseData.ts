@@ -24,6 +24,9 @@ export const videoUrls = {
   modulo6_aula1: "https://youtu.be/6XsDAXu6ZT0",
   modulo6_aula2: "https://youtu.be/hgLVJWTUCY4",
   modulo6_aula3: "https://youtu.be/YZAd9XRmX_U",
+  modulo7_aula1: "https://youtu.be/umxBBSzWAOw",
+  modulo7_aula2: "https://youtu.be/ymWF0ReyRGo",
+  modulo7_aula3: "https://youtu.be/2ppgLAxyb2o",
   bonus_aula1: "https://youtu.be/iFd_13vrj1Q",
   bonus_aula2: "https://youtu.be/L_AtiDKoiIk",
   bonus_aula3: "https://youtu.be/uXoYunLhzJo"
@@ -534,6 +537,45 @@ Veremos paso a paso:
 4. Toma de Decisiones Basada en Evidencia: cómo evaluar si debes lanzar un nuevo producto, aumentar los precios de tu membresía o recortar herramientas redundantes basándote en números comprobados.
 
 Al finalizar esta lección, tendrás la capacidad de mirar los números de tu negocio con ojos de estratega y optimizar cada euro invertido para maximizar tu rentabilidad.`
+  },
+  modulo7_aula1: {
+    title: "Analizando el mercado con IA",
+    duration: "12:30",
+    description: `Antes de lanzar un producto digital, redactar una oferta o crear una campaña de contenido, es vital entender el mercado en el que compites: qué busca la audiencia, cuáles son sus dolores desatendidos y qué tendencias están emergiendo.
+
+En esta primera clase del Módulo 7, aprenderás a utilizar la inteligencia artificial como un departamento de investigación de mercado de élite:
+1. Mapeo de Audiencia y Psicografía: cómo descubrir los miedos, aspiraciones, objeciones ocultas y vocabulario exacto de tu cliente ideal utilizando modelos de lenguaje.
+2. Identificación de Tendencias y Demanda Insatisfecha: análisis de conversaciones en redes, reseñas de libros y foros especializados para detectar qué soluciones están buscando las personas.
+3. Evaluación del Tamaño y Viabilidad del Nicho: criterios para determinar si un mercado tiene suficiente poder adquisitivo y volumen para sostener tu negocio.
+4. Extracción de Insights Competitivos: prompts avanzados para sintetizar cientos de opiniones de usuarios en una radiografía de oportunidades de negocio.
+
+Dominarás la metodología para validar tus ideas antes de crearlas, reduciendo a cero el riesgo de lanzar productos que nadie desea comprar.`
+  },
+  modulo7_aula2: {
+    title: "Analizando competidores con IA",
+    duration: "13:45",
+    description: `Tus competidores ya hicieron parte del trabajo por ti: ya invirtieron tiempo y dinero en probar ofertas, redactar páginas de venta y validar conceptos. Ignorarlos es ingenuidad; copiarlos es mediocridad. La clave está en analizarlos con inteligencia para encontrar sus debilidades y diferenciarte con autoridad.
+
+En esta segunda clase, abordaremos la ingeniería inversa competitiva con IA:
+1. Auditoría de Propuestas de Valor: cómo desglosar la promesa comercial, los precios y la estructura de bonos de los líderes de tu nicho.
+2. Análisis de Reseñas Negativas y Quejas: la mina de oro para creadores inteligentes. Aprenderás a alimentar las críticas de 1 y 2 estrellas de productos competidores en la IA para identificar exactamente qué les falta a sus cursos y servicios.
+3. Análisis de Gaps y Oportunidades en Blanco: cómo detectar nichos ignorados, formatos descuidados o ángulos de comunicación que tus competidores no están cubriendo.
+4. Matriz de Posicionamiento Único: prompts para definir tu diferenciador clave (Unique Selling Proposition) para que tus clientes te elijan a ti sin dudar.
+
+Transformarás a tus competidores en tus mejores maestros de desarrollo de producto sin tener que gastar en costosos estudios de mercado.`
+  },
+  modulo7_aula3: {
+    title: "Encontrando oportunidades de mejora con IA",
+    duration: "14:10",
+    description: `El éxito en los negocios digitales no proviene de reinventar la rueda, sino de tomar lo que ya funciona y mejorarlo en un 10% clave: una mejor experiencia de usuario, un material complementario superior, una metodología más rápida o un soporte más cercano.
+
+En esta tercera clase del Módulo 7, cerraremos el módulo aprendiendo a aplicar la IA para elevar drásticamente la calidad y el atractivo de tu negocio:
+1. Auditoría de Fricción en la Experiencia del Cliente: cómo detectar puntos donde los alumnos pierden el interés o abandonan las lecciones y rediseñar esos pasos con apoyo de la IA.
+2. Creación de Activos Superiores (El Efecto '10x Better'): cómo producir checklists, plantillas interactivas, prompts personalizados y hojas de trabajo que dejen obsoletos los materiales de la competencia.
+3. Innovación de Formatos y Entrega: cómo incorporar chatbots asistentes, sistemas de soporte automatizado y resúmenes ejecutivos que multipliquen el valor percibido de tu producto.
+4. Plan de Acción de Diferenciación Rápida: un protocolo de 4 semanas para implementar mejoras continuas en tu catálogo y mantenerte siempre un paso adelante en tu mercado.
+
+Al finalizar esta lección, sabrás exactamente cómo construir un producto y una marca imposibles de ignorar en cualquier industria digital.`
   }
 };
 
@@ -846,9 +888,59 @@ export const courseData: CourseData = {
       ]
     },
     {
+      id: "modulo-7",
+      key: "modulo7",
+      order: 7,
+      title: "Módulo 7 — Análisis de Mercado y Competencia con IA",
+      shortTitle: "Módulo 7",
+      description: "Inteligencia competitiva y posicionamiento: análisis de mercado con IA, auditoría de competidores y detección de oportunidades de mejora.",
+      isBonus: false,
+      lessons: [
+        {
+          id: "m7-c1",
+          key: "modulo7_aula1",
+          moduleId: "modulo-7",
+          moduleOrder: 7,
+          order: 1,
+          numberFormatted: "01",
+          title: lessonContent.modulo7_aula1.title,
+          duration: lessonContent.modulo7_aula1.duration,
+          videoUrl: videoUrls.modulo7_aula1,
+          videoId: extractYouTubeId(videoUrls.modulo7_aula1),
+          description: lessonContent.modulo7_aula1.description
+        },
+        {
+          id: "m7-c2",
+          key: "modulo7_aula2",
+          moduleId: "modulo-7",
+          moduleOrder: 7,
+          order: 2,
+          numberFormatted: "02",
+          title: lessonContent.modulo7_aula2.title,
+          duration: lessonContent.modulo7_aula2.duration,
+          videoUrl: videoUrls.modulo7_aula2,
+          videoId: extractYouTubeId(videoUrls.modulo7_aula2),
+          description: lessonContent.modulo7_aula2.description
+        },
+        {
+          id: "m7-c3",
+          key: "modulo7_aula3",
+          moduleId: "modulo-7",
+          moduleOrder: 7,
+          order: 3,
+          numberFormatted: "03",
+          title: lessonContent.modulo7_aula3.title,
+          duration: lessonContent.modulo7_aula3.duration,
+          videoUrl: videoUrls.modulo7_aula3,
+          videoId: extractYouTubeId(videoUrls.modulo7_aula3),
+          description: lessonContent.modulo7_aula3.description
+        }
+      ]
+    },
+    {
       id: "modulo-bonus",
       key: "bonus",
-      order: 7,
+      order: 8,
       title: "Módulo Bônus — Masterclasses y Práctica Aplicada",
       shortTitle: "Módulo Bônus",
       description: "Aceleradores prácticos: dominio integral de prompts y 5 proyectos guiados listos para ejecutar.",
@@ -858,7 +950,7 @@ export const courseData: CourseData = {
           id: "bonus-c1",
           key: "bonus_aula1",
           moduleId: "modulo-bonus",
-          moduleOrder: 7,
+          moduleOrder: 8,
           order: 1,
           numberFormatted: "01",
           title: lessonContent.bonus_aula1.title,
@@ -871,7 +963,7 @@ export const courseData: CourseData = {
           id: "bonus-c2",
           key: "bonus_aula2",
           moduleId: "modulo-bonus",
-          moduleOrder: 7,
+          moduleOrder: 8,
           order: 2,
           numberFormatted: "02",
           title: lessonContent.bonus_aula2.title,
@@ -884,7 +976,7 @@ export const courseData: CourseData = {
           id: "bonus-c3",
           key: "bonus_aula3",
           moduleId: "modulo-bonus",
-          moduleOrder: 7,
+          moduleOrder: 8,
           order: 3,
           numberFormatted: "03",
           title: lessonContent.bonus_aula3.title,
@@ -1147,6 +1239,36 @@ export const lessonMaterials: Record<string, LessonMaterial> = {
     description: "Diagnóstico empresarial y tableros inteligentes: análisis de balances con IA, detección de anomalías de ingresos y toma de decisiones financieras estratégicas.",
     totalPages: 15,
     pdfUrl: "/materiales/modulo-6/clase-03.pdf",
+    fileSizeFormatted: "660 KB"
+  },
+  "m7-c1": {
+    lessonId: "m7-c1",
+    moduleId: "modulo-7",
+    moduleTitle: "Módulo 7 — Análisis de Mercado y Competencia con IA",
+    title: "Guía Oficial: Analizando el mercado con IA",
+    description: "Investigación de mercado ágil con IA: psicografía profunda del cliente ideal, detección de tendencias emergentes, tamaño de nicho y validación de demanda.",
+    totalPages: 15,
+    pdfUrl: "/materiales/modulo-7/clase-01.pdf",
+    fileSizeFormatted: "665 KB"
+  },
+  "m7-c2": {
+    lessonId: "m7-c2",
+    moduleId: "modulo-7",
+    moduleTitle: "Módulo 7 — Análisis de Mercado y Competencia con IA",
+    title: "Guía Oficial: Analizando competidores con IA",
+    description: "Ingeniería inversa de la competencia con IA: auditoría de ofertas, análisis forense de reseñas negativas, detección de vacíos de mercado y posicionamiento único.",
+    totalPages: 15,
+    pdfUrl: "/materiales/modulo-7/clase-02.pdf",
+    fileSizeFormatted: "670 KB"
+  },
+  "m7-c3": {
+    lessonId: "m7-c3",
+    moduleId: "modulo-7",
+    moduleTitle: "Módulo 7 — Análisis de Mercado y Competencia con IA",
+    title: "Guía Oficial: Encontrando oportunidades de mejora con IA",
+    description: "Diferenciación extrema y ventaja competitiva: auditoría de fricción del cliente, desarrollo de activos '10x Better' y plan de iteración continua de productos.",
+    totalPages: 15,
+    pdfUrl: "/materiales/modulo-7/clase-03.pdf",
     fileSizeFormatted: "660 KB"
   }
 };
