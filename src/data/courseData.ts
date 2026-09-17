@@ -8,16 +8,22 @@ import { extractYouTubeId } from '@/lib/utils';
 export const videoUrls = {
   modulo1_aula1: "https://youtu.be/tB7a89svn1Y",
   modulo1_aula2: "https://youtu.be/RdUqt48FtqI",
+  modulo1_aula3: "https://youtu.be/Jdv41Vwfqew",
   modulo2_aula1: "https://youtu.be/PkRRLGi7wqc",
   modulo2_aula2: "https://youtu.be/CpIc-LPV9tc",
+  modulo2_aula3: "https://youtu.be/9OaLB1olYZc",
   modulo3_aula1: "https://youtu.be/0l4HhR_4N_Y",
   modulo3_aula2: "https://youtu.be/CP2PILG2_5o",
+  modulo3_aula3: "https://youtu.be/EtijAXd7F3c",
   modulo4_aula1: "https://youtu.be/PFSJRp382jQ",
   modulo4_aula2: "https://youtu.be/NoiVXS5kL_M",
+  modulo4_aula3: "https://youtu.be/qKN-RdDUBS4",
   modulo5_aula1: "https://youtu.be/a-PQTz15Y0M",
   modulo5_aula2: "https://youtu.be/1SyfCzR6zn4",
+  modulo5_aula3: "https://youtu.be/AKHbOKawc-Y",
   bonus_aula1: "https://youtu.be/iFd_13vrj1Q",
-  bonus_aula2: "https://youtu.be/L_AtiDKoiIk"
+  bonus_aula2: "https://youtu.be/L_AtiDKoiIk",
+  bonus_aula3: "https://youtu.be/uXoYunLhzJo"
 };
 
 // ===============================
@@ -70,6 +76,26 @@ También puedes pedirle a la herramienta que revise una estructura, que sugiera 
 Lo más importante es salir de la idea abstracta y comenzar a construir.
 
 Utiliza la IA para ayudarte a organizar el camino entre “tengo una idea” y “tengo algo listo para desarrollar”. La herramienta puede ayudarte a avanzar, pero las decisiones sobre el proyecto siguen estando en tus manos.`
+  },
+  modulo1_aula3: {
+    title: "Creando tu primer plan de uso de IA",
+    duration: "14:15",
+    description: `Saber que la inteligencia artificial puede ayudarte es solo el primer paso; el verdadero diferencial está en definir exactamente cómo, cuándo y para qué la vas a utilizar en tu día a día.
+
+Sin un plan claro de adopción, es muy común caer en dos extremos: o intentar delegarlo todo sin criterio y frustrarse con resultados genéricos, o abrumarse con tantas herramientas y no implementar ninguna en proyectos reales.
+
+En esta clase aprenderás a diseñar tu primer plan estratégico de uso de la IA.
+
+Comenzamos identificando tus cuellos de botella cotidianos: ¿en qué tareas dedicas más tiempo del necesario? ¿En la investigación de ideas? ¿En la redacción del primer borrador? ¿En la organización de cronogramas o en la síntesis de información técnica?
+
+Una vez identificadas estas áreas, establecemos un flujo ordenado en tres niveles:
+1. Tareas de exploración: donde la IA actúa como generadora de hipótesis y mapas conceptuales.
+2. Tareas de producción asistida: donde redactas y creas en co-creación guiada paso a paso.
+3. Tareas de auditoría y pulido: donde utilizas la tecnología para contrastar calidad y coherencia.
+
+También definirás tus propias reglas de control para asegurar que tu criterio humano y tu voz propia se mantengan siempre como el filtro final de cada entregable.
+
+El objetivo de esta clase es que salgas con una hoja de ruta simple y accionable que puedas aplicar de inmediato a tu rutina de trabajo.`
   },
   modulo2_aula1: {
     title: "Creando textos y contenido con IA",
@@ -131,6 +157,22 @@ Se trata de adaptar una misma información para que funcione de manera adecuada 
 
 De esta manera, una sola idea puede dar origen a diferentes piezas de contenido, manteniendo el mensaje principal y cambiando la forma de presentarlo según el objetivo.`
   },
+  modulo2_aula3: {
+    title: "Creando una campaña de contenido con IA",
+    duration: "15:45",
+    description: `Crear publicaciones aisladas suele exigir mucho esfuerzo y generar poco impacto. Cuando trabajas con una visión de campaña, una misma idea central se planifica de forma estratégica a lo largo del tiempo, guiando a tu audiencia a través de un recorrido coherente.
+
+En esta clase aprenderás a diseñar y producir una campaña completa de contenidos utilizando la inteligencia artificial como acelerador creativo.
+
+Aprenderás a estructurar una campaña en tres fases complementarias:
+1. Fase de Conciencia y Atracción: contenidos breves, preguntas provocativas y reflexiones que despiertan el interés del público.
+2. Fase de Profundización y Valor: artículos, análisis detallados y guías paso a paso que construyen autoridad y confianza.
+3. Fase de Decisión y Acción: mensajes claros y directos que invitan a dar el siguiente paso, ya sea registrarse, descargar un recurso o acceder a una capacitación.
+
+Veremos cómo redactar prompts maestros para generar un calendario editorial coordinado, manteniendo un tono de voz uniforme en todos los canales y adaptando los mensajes sin perder la esencia.
+
+Al finalizar la clase, sabrás cómo pasar de publicar contenidos dispersos a gestionar un sistema planificado y predecible de comunicación digital.`
+  },
   modulo3_aula1: {
     title: "Creando imágenes con inteligencia artificial",
     duration: "13:10",
@@ -180,6 +222,22 @@ Comienza con la finalidad del material.
 Cuando sabes qué necesitas comunicar, para quién estás creando y dónde utilizarás el contenido, resulta mucho más fácil utilizar la inteligencia artificial para desarrollar algo adecuado para tu proyecto.
 
 La herramienta genera posibilidades, pero tú decides cómo utilizarlas y cómo integrarlas en la creación final.`
+  },
+  modulo3_aula3: {
+    title: "Creando una biblioteca inteligente de respuestas",
+    duration: "13:50",
+    description: `A medida que tu presencia digital o tus proyectos crecen, la cantidad de preguntas, mensajes y consultas repetitivas de los alumnos, clientes o seguidores aumenta notablemente.
+
+En lugar de redactar cada respuesta desde cero o recurrir a plantillas frías e impersonales, la inteligencia artificial te permite construir una biblioteca inteligente y dinámica de respuestas.
+
+En esta clase aprenderás a organizar un repositorio centralizado de conocimiento sobre tus proyectos, políticas, contenidos y metodologías.
+
+Aprenderás a:
+1. Clasificar las consultas más habituales en categorías clave (soporte, orientación técnica, objeciones frecuentes y recomendaciones).
+2. Crear prompts parametrizados que tomen los datos del repositorio y elaboren respuestas personalizadas, claras y empáticas en segundos.
+3. Establecer directrices de tono y estilo para que cada comunicación refleje profesionalismo y calidez.
+
+Construir esta biblioteca no solo te ahorrará decenas de horas operativas cada semana, sino que garantizará una experiencia impecable y de altísima calidad para todas las personas que interactúen con tu contenido o tus productos.`
   },
   modulo4_aula1: {
     title: "Desarrollando ideas para productos digitales",
@@ -238,6 +296,23 @@ Utiliza la inteligencia artificial como apoyo para organizar tus ideas, pero man
 Una buena estructura no tiene que ser complicada. Tiene que ayudar al usuario a comprender el contenido y avanzar de forma lógica hacia el objetivo del material.
 
 Antes de comenzar la producción, revisa toda la estructura y asegúrate de que cada parte tenga una función clara dentro del producto.`
+  },
+  modulo4_aula3: {
+    title: "Documentando procesos con IA",
+    duration: "16:20",
+    description: `Un negocio digital sostenible no depende de la improvisación ni de la memoria: se apoya en procesos documentados, repetibles y optimizables.
+
+Sin embargo, redactar Procedimientos Operativos Estándar (SOPs) o manuales paso a paso suele percibirse como una tarea tediosa y lenta. Aquí es donde la inteligencia artificial se convierte en tu mayor aliada organizativa.
+
+En esta clase aprenderás a documentar y estandarizar tus procesos de creación y gestión digital con ayuda de la IA.
+
+Aprenderás a:
+1. Capturar flujos de trabajo en bruto: cómo dictar, transcribir o describir tus pasos diarios para que la IA los procese.
+2. Transformar notas dispersas en manuales claros con objetivos, herramientas requeridas, listas de verificación y pasos numerados.
+3. Identificar puntos de fricción o etapas redundantes que pueden simplificarse o automatizarse.
+4. Crear guías de delegación para que colaboradores o asistentes puedan ejecutar tareas manteniendo el estándar de calidad de tu marca.
+
+Al documentar tus métodos de trabajo, dejas de depender de la inspiración del momento y construyes una estructura sólida que permite escalar tus proyectos con total tranquilidad.`
   },
   modulo5_aula1: {
     title: "Organizando y revisando tu material digital",
@@ -308,6 +383,22 @@ Crear con IA es un proceso continuo.
 Puedes crear, revisar, publicar, aprender del resultado y volver a mejorar tu próximo proyecto.
 
 La idea es utilizar cada experiencia para entender mejor lo que funciona, identificar lo que puede mejorar y hacer que cada nueva creación sea más clara y útil.`
+  },
+  modulo5_aula3: {
+    title: "Construyendo un flujo de trabajo completo con IA",
+    duration: "17:35",
+    description: `Has aprendido a investigar, redactar, crear piezas visuales, estructurar productos y documentar procesos. Ahora es el momento de integrar todas estas piezas en un flujo de trabajo unificado y sin fricciones.
+
+Un flujo de trabajo completo conecta cada etapa de tu ciclo creativo: desde que surge una idea embrionaria hasta que el producto final está publicado, distribuido y optimizado.
+
+En esta clase construiremos juntos un sistema operativo de creación digital de extremo a extremo:
+1. Entrada y Captura: centralización de ideas e investigación inicial.
+2. Procesamiento e Incubación: estructuración curricular y despiece temático asistido por IA.
+3. Producción Multicanal: generación armónica de textos, imágenes y materiales descargables.
+4. Auditoría de Calidad: aplicación de checklists de revisión antes del lanzamiento.
+5. Monitoreo y Aprendizaje: captura de feedback para retroalimentar el sistema.
+
+Aprenderás a eliminar los cuellos de botella entre etapas y a trabajar con un método que te otorgue claridad mental, velocidad de entrega y consistencia a largo plazo.`
   },
   bonus_aula1: {
     title: "AI Creator Prompts: Do Zero ao Resultado",
@@ -384,6 +475,21 @@ No necesitas hacerlos todos de una vez.
 Elige uno, desarrolla cada etapa y observa qué funciona, qué necesita ajustes y qué puedes mejorar.
 
 La práctica te ayudará a convertir lo que aprendiste en una habilidad que puedas utilizar en tus próximos proyectos digitales.`
+  },
+  bonus_aula3: {
+    title: "Cómo crear mejores instrucciones para la IA",
+    duration: "19:10",
+    description: `En este tercer entrenamiento avanzado del Módulo Bónus, profundizaremos en el arte y la ciencia de la ingeniería de instrucciones para obtener resultados de nivel experto en cualquier modelo de inteligencia artificial.
+
+Muchas personas se conforman con instrucciones genéricas y obtienen respuestas superficiales. Los creadores profesionales entienden que la precisión en el prompt determina la profundidad del resultado.
+
+A lo largo de esta clase dominarás las técnicas de instrucción más avanzadas del mercado:
+1. Arquitectura R.C.I.E.F.: Rol, Contexto, Instrucción, Ejemplos (Few-Shot) y Formato de salida estructurado.
+2. Delimitadores y Restricciones Negativas: cómo impedir alucinaciones, redundancias y clichés estilísticos.
+3. Cadena de Pensamiento (Chain of Thought): cómo forzar al modelo a razonar paso a paso antes de entregar su veredicto.
+4. Iteración Recursiva y Meta-Prompting: cómo hacer que la propia IA critique, audite y refine sus propias instrucciones para elevar continuamente la calidad de tus proyectos.
+
+Esta masterclass te entregará las herramientas conceptuales y prácticas definitivas para dialogar con los modelos de IA con maestría y control absoluto.`
   }
 };
 
@@ -429,6 +535,19 @@ export const courseData: CourseData = {
           videoUrl: videoUrls.modulo1_aula2,
           videoId: extractYouTubeId(videoUrls.modulo1_aula2),
           description: lessonContent.modulo1_aula2.description
+        },
+        {
+          id: "m1-c3",
+          key: "modulo1_aula3",
+          moduleId: "modulo-1",
+          moduleOrder: 1,
+          order: 3,
+          numberFormatted: "03",
+          title: lessonContent.modulo1_aula3.title,
+          duration: lessonContent.modulo1_aula3.duration,
+          videoUrl: videoUrls.modulo1_aula3,
+          videoId: extractYouTubeId(videoUrls.modulo1_aula3),
+          description: lessonContent.modulo1_aula3.description
         }
       ]
     },
@@ -466,6 +585,19 @@ export const courseData: CourseData = {
           videoUrl: videoUrls.modulo2_aula2,
           videoId: extractYouTubeId(videoUrls.modulo2_aula2),
           description: lessonContent.modulo2_aula2.description
+        },
+        {
+          id: "m2-c3",
+          key: "modulo2_aula3",
+          moduleId: "modulo-2",
+          moduleOrder: 2,
+          order: 3,
+          numberFormatted: "03",
+          title: lessonContent.modulo2_aula3.title,
+          duration: lessonContent.modulo2_aula3.duration,
+          videoUrl: videoUrls.modulo2_aula3,
+          videoId: extractYouTubeId(videoUrls.modulo2_aula3),
+          description: lessonContent.modulo2_aula3.description
         }
       ]
     },
@@ -503,6 +635,19 @@ export const courseData: CourseData = {
           videoUrl: videoUrls.modulo3_aula2,
           videoId: extractYouTubeId(videoUrls.modulo3_aula2),
           description: lessonContent.modulo3_aula2.description
+        },
+        {
+          id: "m3-c3",
+          key: "modulo3_aula3",
+          moduleId: "modulo-3",
+          moduleOrder: 3,
+          order: 3,
+          numberFormatted: "03",
+          title: lessonContent.modulo3_aula3.title,
+          duration: lessonContent.modulo3_aula3.duration,
+          videoUrl: videoUrls.modulo3_aula3,
+          videoId: extractYouTubeId(videoUrls.modulo3_aula3),
+          description: lessonContent.modulo3_aula3.description
         }
       ]
     },
@@ -540,6 +685,19 @@ export const courseData: CourseData = {
           videoUrl: videoUrls.modulo4_aula2,
           videoId: extractYouTubeId(videoUrls.modulo4_aula2),
           description: lessonContent.modulo4_aula2.description
+        },
+        {
+          id: "m4-c3",
+          key: "modulo4_aula3",
+          moduleId: "modulo-4",
+          moduleOrder: 4,
+          order: 3,
+          numberFormatted: "03",
+          title: lessonContent.modulo4_aula3.title,
+          duration: lessonContent.modulo4_aula3.duration,
+          videoUrl: videoUrls.modulo4_aula3,
+          videoId: extractYouTubeId(videoUrls.modulo4_aula3),
+          description: lessonContent.modulo4_aula3.description
         }
       ]
     },
@@ -577,6 +735,19 @@ export const courseData: CourseData = {
           videoUrl: videoUrls.modulo5_aula2,
           videoId: extractYouTubeId(videoUrls.modulo5_aula2),
           description: lessonContent.modulo5_aula2.description
+        },
+        {
+          id: "m5-c3",
+          key: "modulo5_aula3",
+          moduleId: "modulo-5",
+          moduleOrder: 5,
+          order: 3,
+          numberFormatted: "03",
+          title: lessonContent.modulo5_aula3.title,
+          duration: lessonContent.modulo5_aula3.duration,
+          videoUrl: videoUrls.modulo5_aula3,
+          videoId: extractYouTubeId(videoUrls.modulo5_aula3),
+          description: lessonContent.modulo5_aula3.description
         }
       ]
     },
@@ -614,6 +785,19 @@ export const courseData: CourseData = {
           videoUrl: videoUrls.bonus_aula2,
           videoId: extractYouTubeId(videoUrls.bonus_aula2),
           description: lessonContent.bonus_aula2.description
+        },
+        {
+          id: "bonus-c3",
+          key: "bonus_aula3",
+          moduleId: "modulo-bonus",
+          moduleOrder: 6,
+          order: 3,
+          numberFormatted: "03",
+          title: lessonContent.bonus_aula3.title,
+          duration: lessonContent.bonus_aula3.duration,
+          videoUrl: videoUrls.bonus_aula3,
+          videoId: extractYouTubeId(videoUrls.bonus_aula3),
+          description: lessonContent.bonus_aula3.description
         }
       ]
     }
@@ -780,6 +964,66 @@ export const lessonMaterials: Record<string, LessonMaterial> = {
     totalPages: 15,
     pdfUrl: "/materiales/bonus/clase-02.pdf",
     fileSizeFormatted: "709 KB"
+  },
+  "m1-c3": {
+    lessonId: "m1-c3",
+    moduleId: "modulo-1",
+    moduleTitle: "Módulo 1 — Fundamentos de la Creación con IA",
+    title: "Guía Oficial: Creando tu primer plan de uso de IA",
+    description: "Diseño de mapa de adopción estratégica de IA, matriz de delegación cognitiva en 3 niveles, auditoría de cuellos de botella y cuaderno de trabajo.",
+    totalPages: 15,
+    pdfUrl: "/materiales/modulo-1/clase-03.pdf",
+    fileSizeFormatted: "675 KB"
+  },
+  "m2-c3": {
+    lessonId: "m2-c3",
+    moduleId: "modulo-2",
+    moduleTitle: "Módulo 2 — Generación de Contenido e Imágenes",
+    title: "Guía Oficial: Creando una campaña de contenido con IA",
+    description: "Estructura de campaña en 3 fases (Atracción, Valor y Decisión), calendario editorial coordinado, prompts maestros multicanal y checklist de coherencia.",
+    totalPages: 15,
+    pdfUrl: "/materiales/modulo-2/clase-03.pdf",
+    fileSizeFormatted: "668 KB"
+  },
+  "m3-c3": {
+    lessonId: "m3-c3",
+    moduleId: "modulo-3",
+    moduleTitle: "Módulo 3 — Creación y Edición Visual con IA",
+    title: "Guía Oficial: Creando una biblioteca inteligente de respuestas",
+    description: "Repositorio centralizado de conocimiento de marca, prompts de parametrización para atención al cliente y alumnos, categorización de FAQs y protocolo de soporte.",
+    totalPages: 15,
+    pdfUrl: "/materiales/modulo-3/clase-03.pdf",
+    fileSizeFormatted: "660 KB"
+  },
+  "m4-c3": {
+    lessonId: "m4-c3",
+    moduleId: "modulo-4",
+    moduleTitle: "Módulo 4 — Desarrollo y Estructuración de Productos Digitales",
+    title: "Guía Oficial: Documentando procesos con IA",
+    description: "Metodología de captura de flujos de trabajo, redacción de SOPs (Procedimientos Operativos Estándar), guías de delegación paso a paso y checklists de ejecución.",
+    totalPages: 15,
+    pdfUrl: "/materiales/modulo-4/clase-03.pdf",
+    fileSizeFormatted: "655 KB"
+  },
+  "m5-c3": {
+    lessonId: "m5-c3",
+    moduleId: "modulo-5",
+    moduleTitle: "Módulo 5 — Revisión, Publicación y Lanzamiento",
+    title: "Guía Oficial: Construyendo un flujo de trabajo completo con IA",
+    description: "Sistema operativo de creación digital de extremo a extremo, integración de etapas (Captura, Incubación, Producción, Auditoría y Monitoreo) y optimización de ciclo.",
+    totalPages: 15,
+    pdfUrl: "/materiales/modulo-5/clase-03.pdf",
+    fileSizeFormatted: "670 KB"
+  },
+  "bonus-c3": {
+    lessonId: "bonus-c3",
+    moduleId: "modulo-bonus",
+    moduleTitle: "Módulo Bônus — Masterclasses y Práctica Aplicada",
+    title: "Masterclass Oficial: Cómo crear mejores instrucciones para la IA",
+    description: "Ingeniería de prompts avanzada con la arquitectura R.C.I.E.F., delimitadores y restricciones negativas, Chain of Thought y meta-prompting para resultados de élite.",
+    totalPages: 15,
+    pdfUrl: "/materiales/bonus/clase-03.pdf",
+    fileSizeFormatted: "690 KB"
   }
 };
 

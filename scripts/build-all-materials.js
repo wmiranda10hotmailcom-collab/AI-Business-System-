@@ -1,6 +1,6 @@
 // scripts/build-all-materials.js
 // Compilador oficial de materiales didácticos complementarios para AI Business System
-// Genera los 12 PDFs oficiales con un mínimo estricto de 15 páginas cada uno (>= 180 páginas en total)
+// Genera los 18 PDFs oficiales con un mínimo estricto de 15 páginas cada uno (>= 270 páginas en total)
 
 const fs = require('fs');
 const path = require('path');
@@ -8,13 +8,19 @@ const { execSync } = require('child_process');
 const { PDFDocument } = require('pdf-lib');
 const { generateHtmlDocument } = require('./pdf-template');
 
-// Importar los 6 módulos didácticos con las 12 clases
+// Importar los 6 módulos didácticos con las 18 clases
 const { m1_c1, m1_c2 } = require('./content-m1');
+const { m1_c3 } = require('./content-m1-c3');
 const { m2_c1, m2_c2 } = require('./content-m2');
+const { m2_c3 } = require('./content-m2-c3');
 const { m3_c1, m3_c2 } = require('./content-m3');
+const { m3_c3 } = require('./content-m3-c3');
 const { m4_c1, m4_c2 } = require('./content-m4');
+const { m4_c3 } = require('./content-m4-c3');
 const { m5_c1, m5_c2 } = require('./content-m5');
+const { m5_c3 } = require('./content-m5-c3');
 const { bonus_c1, bonus_c2 } = require('./content-bonus');
+const { bonus_c3 } = require('./content-bonus-c3');
 
 const CHROME_PATH = "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe";
 const ROOT_DIR = path.resolve(__dirname, '..');
@@ -32,6 +38,11 @@ const materialsManifest = [
     outPath: path.join(ROOT_DIR, 'public', 'materiales', 'modulo-1', 'clase-02.pdf')
   },
   {
+    lessonId: "m1-c3",
+    config: m1_c3,
+    outPath: path.join(ROOT_DIR, 'public', 'materiales', 'modulo-1', 'clase-03.pdf')
+  },
+  {
     lessonId: "m2-c1",
     config: m2_c1,
     outPath: path.join(ROOT_DIR, 'public', 'materiales', 'modulo-2', 'clase-01.pdf')
@@ -40,6 +51,11 @@ const materialsManifest = [
     lessonId: "m2-c2",
     config: m2_c2,
     outPath: path.join(ROOT_DIR, 'public', 'materiales', 'modulo-2', 'clase-02.pdf')
+  },
+  {
+    lessonId: "m2-c3",
+    config: m2_c3,
+    outPath: path.join(ROOT_DIR, 'public', 'materiales', 'modulo-2', 'clase-03.pdf')
   },
   {
     lessonId: "m3-c1",
@@ -52,6 +68,11 @@ const materialsManifest = [
     outPath: path.join(ROOT_DIR, 'public', 'materiales', 'modulo-3', 'clase-02.pdf')
   },
   {
+    lessonId: "m3-c3",
+    config: m3_c3,
+    outPath: path.join(ROOT_DIR, 'public', 'materiales', 'modulo-3', 'clase-03.pdf')
+  },
+  {
     lessonId: "m4-c1",
     config: m4_c1,
     outPath: path.join(ROOT_DIR, 'public', 'materiales', 'modulo-4', 'clase-01.pdf')
@@ -60,6 +81,11 @@ const materialsManifest = [
     lessonId: "m4-c2",
     config: m4_c2,
     outPath: path.join(ROOT_DIR, 'public', 'materiales', 'modulo-4', 'clase-02.pdf')
+  },
+  {
+    lessonId: "m4-c3",
+    config: m4_c3,
+    outPath: path.join(ROOT_DIR, 'public', 'materiales', 'modulo-4', 'clase-03.pdf')
   },
   {
     lessonId: "m5-c1",
@@ -72,6 +98,11 @@ const materialsManifest = [
     outPath: path.join(ROOT_DIR, 'public', 'materiales', 'modulo-5', 'clase-02.pdf')
   },
   {
+    lessonId: "m5-c3",
+    config: m5_c3,
+    outPath: path.join(ROOT_DIR, 'public', 'materiales', 'modulo-5', 'clase-03.pdf')
+  },
+  {
     lessonId: "bonus-c1",
     config: bonus_c1,
     outPath: path.join(ROOT_DIR, 'public', 'materiales', 'bonus', 'clase-01.pdf')
@@ -80,6 +111,11 @@ const materialsManifest = [
     lessonId: "bonus-c2",
     config: bonus_c2,
     outPath: path.join(ROOT_DIR, 'public', 'materiales', 'bonus', 'clase-02.pdf')
+  },
+  {
+    lessonId: "bonus-c3",
+    config: bonus_c3,
+    outPath: path.join(ROOT_DIR, 'public', 'materiales', 'bonus', 'clase-03.pdf')
   }
 ];
 
@@ -101,7 +137,7 @@ async function buildAll() {
 
   for (let i = 0; i < materialsManifest.length; i++) {
     const item = materialsManifest[i];
-    const indexStr = `[${(i + 1).toString().padStart(2, '0')}/12]`;
+    const indexStr = `[${(i + 1).toString().padStart(2, '0')}/18]`;
     console.log(`${indexStr} Generando PDF para: ${item.lessonId} (${item.config.lessonTitle})...`);
 
     // 1. Asegurar directorio de destino
@@ -158,7 +194,7 @@ async function buildAll() {
   console.table(results);
   console.log(`\n>>> TOTAL DE PÁGINAS DIDÁCTICAS GENERADAS: ${totalPagesSum} PÁGINAS`);
   console.log(`>>> TOTAL DE DOCUMENTOS PDF GENERADOS:     ${results.length} DOCUMENTOS`);
-  console.log(`>>> REQUISITO MÍNIMO (>= 180 PÁGINAS):     ${totalPagesSum >= 180 ? "SUPERADO EXITOSAMENTE ✓" : "FALLIDO ✗"}`);
+  console.log(`>>> REQUISITO MÍNIMO (>= 270 PÁGINAS):     ${totalPagesSum >= 270 ? "SUPERADO EXITOSAMENTE ✓" : "FALLIDO ✗"}`);
   console.log("================================================================================\n");
 }
 
