@@ -157,7 +157,7 @@ export default function DashboardPage() {
                   Estructura del Curso
                 </h2>
                 <p className="text-xs text-zinc-400">
-                  6 módulos prácticos paso a paso
+                  {courseData.modules.length} módulos prácticos paso a paso
                 </p>
               </div>
               <NextLink href="/curso">

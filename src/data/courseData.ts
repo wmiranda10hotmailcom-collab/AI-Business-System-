@@ -21,6 +21,9 @@ export const videoUrls = {
   modulo5_aula1: "https://youtu.be/a-PQTz15Y0M",
   modulo5_aula2: "https://youtu.be/1SyfCzR6zn4",
   modulo5_aula3: "https://youtu.be/AKHbOKawc-Y",
+  modulo6_aula1: "https://youtu.be/6XsDAXu6ZT0",
+  modulo6_aula2: "https://youtu.be/hgLVJWTUCY4",
+  modulo6_aula3: "https://youtu.be/YZAd9XRmX_U",
   bonus_aula1: "https://youtu.be/iFd_13vrj1Q",
   bonus_aula2: "https://youtu.be/L_AtiDKoiIk",
   bonus_aula3: "https://youtu.be/uXoYunLhzJo"
@@ -490,6 +493,47 @@ A lo largo de esta clase dominarás las técnicas de instrucción más avanzadas
 4. Iteración Recursiva y Meta-Prompting: cómo hacer que la propia IA critique, audite y refine sus propias instrucciones para elevar continuamente la calidad de tus proyectos.
 
 Esta masterclass te entregará las herramientas conceptuales y prácticas definitivas para dialogar con los modelos de IA con maestría y control absoluto.`
+  },
+  modulo6_aula1: {
+    title: "Entendiendo ingresos, costos, gastos y ganancias",
+    duration: "11:20",
+    description: `Para construir un negocio digital rentable y sostenible con inteligencia artificial, dominar los números fundamentales no es opcional: es la base indispensable de la supervivencia y el crecimiento empresarial.
+
+Muchas personas confunden ingresos con ganancias y celebran cifras brutas de facturación mientras su flujo de caja real es negativo. En esta primera clase del Módulo 6, desglosaremos con total claridad los conceptos financieros vitales de cualquier proyecto digital:
+
+1. Ingresos: la totalidad de entradas de dinero generadas por las ventas de tus productos, servicios o formaciones.
+2. Costos: desembolsos directamente asociados a la entrega o producción del bien digital (comisiones de pasarela de pago, software de hosting, licencias de IA por consumo).
+3. Gastos: desembolsos operativos generales para mantener el negocio en marcha (suscripciones de herramientas fijas, dominios, contabilidad, publicidad).
+4. Ganancia Bruta vs. Ganancia Neta: lo que verdaderamente queda en tu cuenta bancaria después de descontar todas las obligaciones.
+
+Aprenderás a clasificar cada salida de capital y a utilizar la inteligencia artificial como un analista financiero que organiza tus registros, audita tus balances y detecta de inmediato fugas de dinero invisibles.`
+  },
+  modulo6_aula2: {
+    title: "Entendiendo margen y ROI",
+    duration: "13:15",
+    description: `Una vez que comprendes los ingresos y los gastos de tu negocio, el siguiente paso decisivo es evaluar la eficiencia y la rentabilidad de cada peso invertido a través del Margen y el ROI (Retorno sobre la Inversión).
+
+En esta segunda clase, abordaremos las métricas esenciales que determinan si tu modelo de negocio es escalable o si estás trabajando más para ganar menos:
+
+1. Margen de Ganancia (Bruto y Neto): qué porcentaje de cada venta se transforma efectivamente en beneficio limpio para tu empresa.
+2. Retorno sobre la Inversión (ROI): la fórmula matemática fundamental para medir cuánto dinero produce cada dólar invertido en herramientas, campañas publicitarias o contrataciones.
+3. ROAS vs. ROI: la diferencia crítica entre el retorno del gasto publicitario y el retorno global sobre los costos totales del negocio.
+4. LTV (Customer Lifetime Value) y CAC (Costo de Adquisición de Clientes): la relación dorada que te indica cuánto puedes pagar para conseguir un nuevo alumno o cliente de forma rentable.
+
+Descubrirás cómo aplicar modelos de IA para simular escenarios de precios, calcular puntos de equilibrio (Break-even point) y proyectar la rentabilidad antes de invertir tu capital en publicidad o nuevos desarrollos.`
+  },
+  modulo6_aula3: {
+    title: "Analizando los resultados de tu negocio con IA",
+    duration: "14:00",
+    description: `Los datos sin interpretación son solo ruido. En esta tercera clase del Módulo 6, aprenderás a transformar planillas de ventas, registros de clientes y métricas operativas en decisiones estratégicas inteligentes utilizando la IA como tu Director Financiero (CFO) virtual.
+
+Veremos paso a paso:
+1. Ingesta y Limpieza de Datos Financieros: cómo alimentar datos en bruto a modelos de IA preservando la privacidad y garantizando un procesamiento exacto.
+2. Diagnóstico Predictivo y Detección de Anomalías: prompts especializados para identificar productos de bajo rendimiento, temporadas de baja demanda y oportunidades de precios desaprovechadas.
+3. Construcción de Tableros Ejecutivos: cómo generar resúmenes ejecutivos automatizados que traducen fórmulas complejas en un plan de acción de 3 prioridades semanales.
+4. Toma de Decisiones Basada en Evidencia: cómo evaluar si debes lanzar un nuevo producto, aumentar los precios de tu membresía o recortar herramientas redundantes basándote en números comprobados.
+
+Al finalizar esta lección, tendrás la capacidad de mirar los números de tu negocio con ojos de estratega y optimizar cada euro invertido para maximizar tu rentabilidad.`
   }
 };
 
@@ -752,9 +796,59 @@ export const courseData: CourseData = {
       ]
     },
     {
+      id: "modulo-6",
+      key: "modulo6",
+      order: 6,
+      title: "Módulo 6 — Métricas y Análisis del Negocio",
+      shortTitle: "Módulo 6",
+      description: "Fundamentos financieros y analítica con IA: ingresos, costos, gastos, ganancias, margen, ROI y diagnóstico de resultados empresariales.",
+      isBonus: false,
+      lessons: [
+        {
+          id: "m6-c1",
+          key: "modulo6_aula1",
+          moduleId: "modulo-6",
+          moduleOrder: 6,
+          order: 1,
+          numberFormatted: "01",
+          title: lessonContent.modulo6_aula1.title,
+          duration: lessonContent.modulo6_aula1.duration,
+          videoUrl: videoUrls.modulo6_aula1,
+          videoId: extractYouTubeId(videoUrls.modulo6_aula1),
+          description: lessonContent.modulo6_aula1.description
+        },
+        {
+          id: "m6-c2",
+          key: "modulo6_aula2",
+          moduleId: "modulo-6",
+          moduleOrder: 6,
+          order: 2,
+          numberFormatted: "02",
+          title: lessonContent.modulo6_aula2.title,
+          duration: lessonContent.modulo6_aula2.duration,
+          videoUrl: videoUrls.modulo6_aula2,
+          videoId: extractYouTubeId(videoUrls.modulo6_aula2),
+          description: lessonContent.modulo6_aula2.description
+        },
+        {
+          id: "m6-c3",
+          key: "modulo6_aula3",
+          moduleId: "modulo-6",
+          moduleOrder: 6,
+          order: 3,
+          numberFormatted: "03",
+          title: lessonContent.modulo6_aula3.title,
+          duration: lessonContent.modulo6_aula3.duration,
+          videoUrl: videoUrls.modulo6_aula3,
+          videoId: extractYouTubeId(videoUrls.modulo6_aula3),
+          description: lessonContent.modulo6_aula3.description
+        }
+      ]
+    },
+    {
       id: "modulo-bonus",
       key: "bonus",
-      order: 6,
+      order: 7,
       title: "Módulo Bônus — Masterclasses y Práctica Aplicada",
       shortTitle: "Módulo Bônus",
       description: "Aceleradores prácticos: dominio integral de prompts y 5 proyectos guiados listos para ejecutar.",
@@ -764,7 +858,7 @@ export const courseData: CourseData = {
           id: "bonus-c1",
           key: "bonus_aula1",
           moduleId: "modulo-bonus",
-          moduleOrder: 6,
+          moduleOrder: 7,
           order: 1,
           numberFormatted: "01",
           title: lessonContent.bonus_aula1.title,
@@ -777,7 +871,7 @@ export const courseData: CourseData = {
           id: "bonus-c2",
           key: "bonus_aula2",
           moduleId: "modulo-bonus",
-          moduleOrder: 6,
+          moduleOrder: 7,
           order: 2,
           numberFormatted: "02",
           title: lessonContent.bonus_aula2.title,
@@ -790,7 +884,7 @@ export const courseData: CourseData = {
           id: "bonus-c3",
           key: "bonus_aula3",
           moduleId: "modulo-bonus",
-          moduleOrder: 6,
+          moduleOrder: 7,
           order: 3,
           numberFormatted: "03",
           title: lessonContent.bonus_aula3.title,
@@ -1024,6 +1118,36 @@ export const lessonMaterials: Record<string, LessonMaterial> = {
     totalPages: 15,
     pdfUrl: "/materiales/bonus/clase-03.pdf",
     fileSizeFormatted: "690 KB"
+  },
+  "m6-c1": {
+    lessonId: "m6-c1",
+    moduleId: "modulo-6",
+    moduleTitle: "Módulo 6 — Métricas y Análisis del Negocio",
+    title: "Guía Oficial: Entendiendo ingresos, costos, gastos y ganancias",
+    description: "Manual financiero para negocios digitales: clasificación de ingresos, estructura de costos fijos y variables, flujo de caja y prompts de auditoría con IA.",
+    totalPages: 15,
+    pdfUrl: "/materiales/modulo-6/clase-01.pdf",
+    fileSizeFormatted: "665 KB"
+  },
+  "m6-c2": {
+    lessonId: "m6-c2",
+    moduleId: "modulo-6",
+    moduleTitle: "Módulo 6 — Métricas y Análisis del Negocio",
+    title: "Guía Oficial: Entendiendo margen y ROI",
+    description: "Cálculo y optimización de rentabilidad digital: margen bruto y neto, ROI de campañas, LTV, CAC, punto de equilibrio y simulaciones predictivas con IA.",
+    totalPages: 15,
+    pdfUrl: "/materiales/modulo-6/clase-02.pdf",
+    fileSizeFormatted: "672 KB"
+  },
+  "m6-c3": {
+    lessonId: "m6-c3",
+    moduleId: "modulo-6",
+    moduleTitle: "Módulo 6 — Métricas y Análisis del Negocio",
+    title: "Guía Oficial: Analizando los resultados de tu negocio con IA",
+    description: "Diagnóstico empresarial y tableros inteligentes: análisis de balances con IA, detección de anomalías de ingresos y toma de decisiones financieras estratégicas.",
+    totalPages: 15,
+    pdfUrl: "/materiales/modulo-6/clase-03.pdf",
+    fileSizeFormatted: "660 KB"
   }
 };
 

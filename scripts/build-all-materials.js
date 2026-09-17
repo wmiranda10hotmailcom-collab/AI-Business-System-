@@ -1,6 +1,6 @@
 // scripts/build-all-materials.js
 // Compilador oficial de materiales didácticos complementarios para AI Business System
-// Genera los 18 PDFs oficiales con un mínimo estricto de 15 páginas cada uno (>= 270 páginas en total)
+// Genera los 21 PDFs oficiales con un mínimo estricto de 15 páginas cada uno (>= 315 páginas en total)
 
 const fs = require('fs');
 const path = require('path');
@@ -8,7 +8,7 @@ const { execSync } = require('child_process');
 const { PDFDocument } = require('pdf-lib');
 const { generateHtmlDocument } = require('./pdf-template');
 
-// Importar los 6 módulos didácticos con las 18 clases
+// Importar los módulos didácticos
 const { m1_c1, m1_c2 } = require('./content-m1');
 const { m1_c3 } = require('./content-m1-c3');
 const { m2_c1, m2_c2 } = require('./content-m2');
@@ -19,6 +19,9 @@ const { m4_c1, m4_c2 } = require('./content-m4');
 const { m4_c3 } = require('./content-m4-c3');
 const { m5_c1, m5_c2 } = require('./content-m5');
 const { m5_c3 } = require('./content-m5-c3');
+const { m6_c1 } = require('./content-m6-c1');
+const { m6_c2 } = require('./content-m6-c2');
+const { m6_c3 } = require('./content-m6-c3');
 const { bonus_c1, bonus_c2 } = require('./content-bonus');
 const { bonus_c3 } = require('./content-bonus-c3');
 
@@ -103,6 +106,21 @@ const materialsManifest = [
     outPath: path.join(ROOT_DIR, 'public', 'materiales', 'modulo-5', 'clase-03.pdf')
   },
   {
+    lessonId: "m6-c1",
+    config: m6_c1,
+    outPath: path.join(ROOT_DIR, 'public', 'materiales', 'modulo-6', 'clase-01.pdf')
+  },
+  {
+    lessonId: "m6-c2",
+    config: m6_c2,
+    outPath: path.join(ROOT_DIR, 'public', 'materiales', 'modulo-6', 'clase-02.pdf')
+  },
+  {
+    lessonId: "m6-c3",
+    config: m6_c3,
+    outPath: path.join(ROOT_DIR, 'public', 'materiales', 'modulo-6', 'clase-03.pdf')
+  },
+  {
     lessonId: "bonus-c1",
     config: bonus_c1,
     outPath: path.join(ROOT_DIR, 'public', 'materiales', 'bonus', 'clase-01.pdf')
@@ -137,7 +155,7 @@ async function buildAll() {
 
   for (let i = 0; i < materialsManifest.length; i++) {
     const item = materialsManifest[i];
-    const indexStr = `[${(i + 1).toString().padStart(2, '0')}/18]`;
+    const indexStr = `[${(i + 1).toString().padStart(2, '0')}/${materialsManifest.length}]`;
     console.log(`${indexStr} Generando PDF para: ${item.lessonId} (${item.config.lessonTitle})...`);
 
     // 1. Asegurar directorio de destino
@@ -188,13 +206,15 @@ async function buildAll() {
     fs.rmdirSync(TEMP_HTML_DIR);
   }
 
+  const minExpectedPages = materialsManifest.length * 15;
+
   console.log("================================================================================");
   console.log("                     INFORME DE AUDITORÍA DE COMPILACIÓN                        ");
   console.log("================================================================================");
   console.table(results);
   console.log(`\n>>> TOTAL DE PÁGINAS DIDÁCTICAS GENERADAS: ${totalPagesSum} PÁGINAS`);
   console.log(`>>> TOTAL DE DOCUMENTOS PDF GENERADOS:     ${results.length} DOCUMENTOS`);
-  console.log(`>>> REQUISITO MÍNIMO (>= 270 PÁGINAS):     ${totalPagesSum >= 270 ? "SUPERADO EXITOSAMENTE ✓" : "FALLIDO ✗"}`);
+  console.log(`>>> REQUISITO MÍNIMO (>= ${minExpectedPages} PÁGINAS):     ${totalPagesSum >= minExpectedPages ? "SUPERADO EXITOSAMENTE ✓" : "FALLIDO ✗"}`);
   console.log("================================================================================\n");
 }
 

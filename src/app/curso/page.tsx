@@ -34,6 +34,8 @@ export default function CoursePage() {
     "modulo-3": true,
     "modulo-4": true,
     "modulo-5": true,
+    "modulo-6": true,
+    "modulo-7": true,
     "modulo-bonus": true,
   });
 
